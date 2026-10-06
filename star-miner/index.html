@@ -1,106 +1,89 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- ⚠ Google OAuth 동의 화면의 '앱 이름'과 이 페이지의 <title>, <h1> 이름이 같아야 인증이 잘 통과됩니다.
-       동의 화면 앱 이름을 다르게 쓰면 아래 두 곳(title, h1)도 똑같이 바꿔주세요. -->
   <title>Star Miner — KOGAMES</title>
-  <meta name="description" content="Star Miner: Idle Mining Galaxy — KOGAMES의 방치형 우주 채굴 게임. 함선을 보내 행성 자원을 채굴하고 은하 제국을 완성하세요.">
+  <meta name="description" content="Star Miner: Idle Mining Galaxy by KOGAMES — send your mining fleet to distant planets, upgrade your ships and build an idle space-mining empire.">
+  <link rel="canonical" href="https://spicerpon.github.io/star-miner/">
+  <link rel="alternate" hreflang="en" href="https://spicerpon.github.io/star-miner/">
+  <link rel="alternate" hreflang="ko" href="https://spicerpon.github.io/ko/star-miner/">
+  <link rel="alternate" hreflang="ja" href="https://spicerpon.github.io/ja/star-miner/">
+  <link rel="alternate" hreflang="x-default" href="https://spicerpon.github.io/star-miner/">
   <meta property="og:title" content="Star Miner">
   <meta property="og:site_name" content="Star Miner">
-  <meta property="og:description" content="Build your space mining empire and upgrade your fleet in this idle tycoon game!">
-  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="../"><span class="brand-mark">K</span>KOGAMES</a>
+    <a class="brand" href="/"><span class="brand-mark">K</span>KOGAMES</a>
     <ul>
-      <li><a href="../#games">Games</a></li>
-      <li><a href="../#contact">Contact</a></li>
-      <li><a href="../privacy/">Privacy</a></li>
+      <li class="hide-sm"><a href="/#games">Games</a></li>
+      <li class="hide-sm"><a href="/#contact">Contact</a></li>
+      <li><a href="/privacy/">Privacy</a></li>
+      <li class="lang-nav"><a href="/star-miner/" lang="en" aria-current="true">EN</a> <a href="/ko/star-miner/" lang="ko">한국어</a> <a href="/ja/star-miner/" lang="ja">日本語</a></li>
     </ul>
   </div>
 </header>
 
 <main>
+  <!-- ⚠ The OAuth consent screen "App name" must match the <title> and <h1> of this page ("Star Miner"). -->
   <div class="hero">
     <div class="wrap">
-      <span class="icon lg" style="margin-bottom:24px"><img src="https://play-lh.googleusercontent.com/uCar93J8aMbg3k8gANjBmitbuxbvH6yznfsO1_fwj23ah6XDpNiqq2AhFHD66a-QBFhsYei6vV0tFseI3oCawA=s224" alt="Star Miner 아이콘" onerror="this.style.opacity=0"></span>
+      <span class="icon lg"><img src="https://play-lh.googleusercontent.com/uCar93J8aMbg3k8gANjBmitbuxbvH6yznfsO1_fwj23ah6XDpNiqq2AhFHD66a-QBFhsYei6vV0tFseI3oCawA=s224" alt="Star Miner" loading="lazy" onerror="this.style.opacity=0"></span>
       <p class="eyebrow">by KOGAMES · Idle Tycoon</p>
       <h1>Star Miner</h1>
-      <p class="lead"><strong>Star Miner: Idle Mining Galaxy (스타 마이너: 방치형 은하 채굴)</strong><br>
-        채굴 함선을 행성으로 보내 자원을 캐고, 함대를 업그레이드하며, 나만의 거대한 방치형 우주 채굴 제국을 완성하는 모바일 게임입니다.</p>
+      <p class="lead"><strong>Star Miner: Idle Mining Galaxy</strong><br>Send mining ships to distant planets, harvest their resources, upgrade your fleet and grow the biggest idle space-mining empire in the galaxy — even while you're offline.</p>
       <div class="btn-row">
-        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.KOgames.IdleStarMiner" target="_blank" rel="noopener">Google Play에서 다운로드 ↗</a>
-        <a class="btn" href="../privacy/">개인정보처리방침</a>
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.KOgames.IdleStarMiner" target="_blank" rel="noopener">Get it on Google Play ↗</a>
+        <a class="btn" href="/privacy/">Privacy Policy</a>
       </div>
     </div>
   </div>
 
   <section>
     <div class="wrap">
-      <h2>게임 특징</h2>
-      <p class="sub">Features</p>
+      <h2>Features</h2>
+      <p class="sub">What you'll do in Star Miner</p>
       <div class="grid-2">
-        <div class="box">
-          <h3>🚀 자동 채굴</h3>
-          <p>함선을 행성에 배치하면 게임을 꺼둔 동안에도 자원이 쌓입니다.</p>
-        </div>
-        <div class="box">
-          <h3>🛠 함대 업그레이드</h3>
-          <p>채굴 속도, 적재량, 이동 속도를 강화해 더 먼 은하로 나아가세요.</p>
-        </div>
-        <div class="box">
-          <h3>🔬 연구와 확장</h3>
-          <p>새로운 기술을 연구하고 행성을 개척해 수익을 극대화하세요.</p>
-        </div>
+        <div class="box"><h3>🚀 Automatic mining</h3><p>Assign ships to planets and keep earning resources even when the game is closed.</p></div>
+        <div class="box"><h3>🛠 Fleet upgrades</h3><p>Boost mining speed, cargo capacity and travel speed to reach farther galaxies.</p></div>
+        <div class="box"><h3>🔬 Research &amp; expansion</h3><p>Unlock new technologies, colonize new planets and maximize your income.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Google 계정 사용 안내 (OAuth 심사용 핵심 섹션) =====
-       게임에서 실제로 Google 로그인으로 하는 일과 일치하도록 문구를 확인/수정하세요. -->
+  <!-- ===== Google Sign-In disclosure (key section for OAuth review). Keep it matching what the game really does. ===== -->
   <section id="google-sign-in">
     <div class="wrap">
-      <h2>Google 계정 로그인 안내</h2>
+      <h2>Signing in with Google</h2>
       <p class="sub">How Star Miner uses your Google Account</p>
       <div class="grid-2">
-        <div class="box">
-          <h3>무엇을 위해 사용하나요?</h3>
-          <p>Star Miner는 Google 계정 로그인을 통해 플레이어를 식별하고, 게임 진행 데이터를 저장·복원(기기 변경 시 이어하기)하는 데 사용합니다.</p>
-        </div>
-        <div class="box">
-          <h3>어떤 정보에 접근하나요?</h3>
-          <p>로그인 시 Google이 제공하는 기본 프로필 정보(계정 식별자, 이름, 이메일 주소, 프로필 사진)만 요청하며, 그 외 Google 계정 데이터(메일, 드라이브 파일, 연락처 등)에는 접근하지 않습니다.</p>
-        </div>
-        <div class="box">
-          <h3>판매·광고 목적 사용 금지</h3>
-          <p>Google 계정 정보는 판매하거나 맞춤형 광고에 사용하지 않습니다. 자세한 내용은 <a href="../privacy/">개인정보처리방침</a>을 확인하세요.</p>
-        </div>
+        <div class="box"><h3>Why we ask you to sign in</h3><p>Star Miner uses Google Sign-In only to identify your player account and to save and restore your game progress — for example, when you move to a new phone.</p></div>
+        <div class="box"><h3>What we access</h3><p>Only the basic profile Google shares at sign-in: your account ID, name, email address and profile picture. We never access your Gmail, Drive files, contacts or any other Google account data.</p></div>
+        <div class="box"><h3>What we never do</h3><p>We do not sell your Google account data or use it for advertising. Read the full <a href="/privacy/#google">Privacy Policy</a>.</p></div>
       </div>
-      <p class="sub" style="margin-top:24px">Star Miner signs you in with Google only to identify your player account and to save and restore your game progress. We request basic profile information (account ID, name, email address, profile picture) and nothing else. Read our <a href="../privacy/#en">Privacy Policy</a>.</p>
     </div>
   </section>
 
   <section id="support">
     <div class="wrap">
-      <h2>문의 및 지원</h2>
-      <p class="sub">버그 제보, 결제 문의, 계정·데이터 삭제 요청: <a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a></p>
+      <h2>Help &amp; Support</h2>
+      <p class="sub">Bug reports, purchase questions, or account and data deletion requests: <a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a></p>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <div>© 2026 KOGAMES. Star Miner is a game by KOGAMES.</div>
+    <div>© 2026 KOGAMES. All rights reserved.</div>
     <nav>
-      <a href="../">KOGAMES</a>
-      <a href="../privacy/">Privacy Policy</a>
-      <a href="../terms/">Terms of Service</a>
+      <a href="/star-miner/">Star Miner</a>
+      <a href="/privacy/">Privacy</a>
+      <a href="/terms/">Terms</a>
       <a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a>
     </nav>
   </div>
