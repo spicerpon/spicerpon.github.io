@@ -97,6 +97,7 @@ section .sub { color: var(--muted); margin: 0 0 32px; }
 .game:hover { transform: translateY(-3px); border-color: var(--accent-2); }
 .game-head { display: flex; gap: 14px; align-items: center; }
 .icon {
+  display: block;
   width: 72px; height: 72px; border-radius: 18px; flex: none;
   background: linear-gradient(135deg, var(--accent-2), #3b2f8f);
   overflow: hidden;
