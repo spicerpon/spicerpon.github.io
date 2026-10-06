@@ -51,11 +51,18 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(135deg, var(--accent), #ff8a3d);
   display: grid; place-items: center; color: #1a1300; font-size: 15px; font-weight: 900;
 }
+.nav a, .brand { white-space: nowrap; overflow-wrap: normal; }
 .nav ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; font-size: 15px; }
 .nav ul a { color: var(--muted); }
 .nav ul a:hover, .nav ul a[aria-current="page"] { color: var(--text); text-decoration: none; }
+/* 언어 전환 버튼 (EN · 한국어 · 日本語) */
+.nav .lang-nav { display: flex; gap: 2px; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+.nav .lang-nav a { padding: 3px 10px; border-radius: 999px; font-size: 13px; }
+.nav .lang-nav a[aria-current="true"] { background: var(--card); color: var(--text); }
 @media (max-width: 640px) {
   .nav ul { gap: 14px; font-size: 14px; }
+  .nav .lang-nav a { padding: 3px 7px; font-size: 12px; }
+  .nav ul li:not(.lang-nav) { display: none; }
   .nav .hide-sm { display: none; }
 }
 
