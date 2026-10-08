@@ -139,3 +139,56 @@ footer .wrap { display: flex; flex-wrap: wrap; gap: 16px 28px; justify-content: 
 footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
 footer a { color: var(--muted); }
 footer a:hover { color: var(--text); }
+
+/* ---------- 커뮤니티 (Discord / Reddit) ---------- */
+:root { --discord: #5865F2; --reddit: #FF4500; }
+.si { width: 18px; height: 18px; flex: none; }
+.btn .si { margin-right: 2px; }
+.btn.discord { background: var(--discord); border-color: var(--discord); color: #fff; }
+.btn.reddit  { background: var(--reddit);  border-color: var(--reddit);  color: #fff; }
+.btn.discord:hover, .btn.reddit:hover { filter: brightness(1.08); border-color: transparent; }
+
+/* 아이콘만 있는 동그란 소셜 버튼 (푸터, 게임 카드) */
+.social { display: flex; gap: 10px; margin-top: 12px; }
+.social .soc {
+  width: 38px; height: 38px; border-radius: 50%;
+  display: grid; place-items: center;
+  background: var(--card); border: 1px solid var(--line); color: var(--muted);
+  transition: background .2s, color .2s, border-color .2s, transform .2s;
+}
+.social .soc .si { width: 18px; height: 18px; }
+.social .soc:hover { color: #fff; transform: translateY(-2px); text-decoration: none; }
+.social .soc.discord:hover { background: var(--discord); border-color: var(--discord); }
+.social .soc.reddit:hover  { background: var(--reddit);  border-color: var(--reddit); }
+.social.sm { margin-top: 0; gap: 8px; }
+.social.sm .soc { width: 30px; height: 30px; }
+.social.sm .soc .si { width: 15px; height: 15px; }
+.game .links { align-items: center; flex-wrap: wrap; }
+.social.push { margin-left: auto; }
+
+/* 커뮤니티 카드 */
+.community { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
+.comm-card {
+  display: flex; gap: 18px; align-items: flex-start;
+  padding: 24px; border-radius: var(--radius);
+  background: var(--card); border: 1px solid var(--line); color: var(--text);
+  transition: transform .2s, border-color .2s, background .2s;
+}
+.comm-card:hover { transform: translateY(-3px); text-decoration: none; }
+.comm-card.discord:hover { border-color: var(--discord); background: linear-gradient(135deg, rgba(88,101,242,.16), var(--card) 60%); }
+.comm-card.reddit:hover  { border-color: var(--reddit);  background: linear-gradient(135deg, rgba(255,69,0,.14), var(--card) 60%); }
+.comm-icon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; flex: none; color: #fff; }
+.comm-icon .si { width: 28px; height: 28px; }
+.comm-card.discord .comm-icon { background: var(--discord); }
+.comm-card.reddit .comm-icon  { background: var(--reddit); }
+.comm-body { display: flex; flex-direction: column; gap: 4px; }
+.comm-body strong { font-size: 18px; }
+.comm-body span { color: var(--muted); font-size: 15px; }
+.comm-body em { font-style: normal; font-weight: 700; font-size: 14px; color: var(--accent); margin-top: 6px; }
+.comm-card.discord em { color: #8f9aff; }
+.comm-card.reddit em  { color: #ff7a45; }
+
+.foot-left { display: flex; flex-direction: column; }
+
+/* 일본어는 공백이 없으므로 keep-all 대신 일반 줄바꿈 사용 */
+html[lang="ja"] body { word-break: normal; line-break: strict; }
