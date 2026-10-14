@@ -2,7 +2,7 @@
 
 GitHub Pages로 무료 상시 호스팅되는 정적 웹사이트입니다. 서버가 필요 없습니다.
 
-- 주소: https://spicerpon.github.io/
+- 주소: https://kogames.dev/
 - 수정한 파일을 이 저장소에 커밋하면 1~2분 뒤 자동으로 반영됩니다.
 
 ## 파일 구성
@@ -36,11 +36,11 @@ GitHub Pages로 무료 상시 호스팅되는 정적 웹사이트입니다. 서�
 |---|---|
 | 앱 이름 | `Star Miner` (← `star-miner/index.html`의 `<title>`, `<h1>`과 일치해야 함) |
 | 사용자 지원 이메일 | `spicerpon@gmail.com` |
-| 애플리케이션 홈페이지 | `https://spicerpon.github.io/star-miner/` |
-| 개인정보처리방침 링크 | `https://spicerpon.github.io/privacy/` |
-| 서비스 약관 링크 | `https://spicerpon.github.io/terms/` |
-| 승인된 도메인 | `spicerpon.github.io` |
+| 애플리케이션 홈페이지 | `https://kogames.dev/star-miner/` |
+| 개인정보처리방침 링크 | `https://kogames.dev/privacy/` |
+| 서비스 약관 링크 | `https://kogames.dev/terms/` |
+| 승인된 도메인 | `kogames.dev` |
 
-승인된 도메인은 Google Search Console에서 `https://spicerpon.github.io/` (URL 접두어 속성)로 소유권 확인이 되어 있어야 하며,
+승인된 도메인은 Google Search Console에서 `https://kogames.dev/` (URL 접두어 속성)로 소유권 확인이 되어 있어야 하며,
 확인한 Google 계정이 Cloud 프로젝트의 소유자/편집자여야 합니다.
 HTML 파일 인증을 쓰면 Google이 준 `googleXXXX.html` 파일을 이 저장소 최상단에 올리면 되고, 이 파일은 지우면 안 됩니다.
