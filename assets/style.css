@@ -225,3 +225,8 @@ html[lang="ja"] body { word-break: normal; line-break: strict; }
 @media (max-width: 640px) {
   .nav .lang-list a { padding: 9px 12px; font-size: 14px; }
 }
+
+/* ---------- 회사 로고 ---------- */
+.brand-logo { height: 36px; width: auto; display: block; }
+.foot-logo { height: 26px; width: auto; display: block; align-self: flex-start; margin-bottom: 10px; opacity: .85; }
+@media (max-width: 640px) { .brand-logo { height: 26px; } }
