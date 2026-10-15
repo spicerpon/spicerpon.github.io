@@ -199,3 +199,29 @@ html[lang="ja"] body { word-break: normal; line-break: strict; }
 .comm-card.kofi:hover { border-color: var(--kofi); background: linear-gradient(135deg, rgba(255,94,91,.14), var(--card) 60%); }
 .comm-card.kofi .comm-icon { background: var(--kofi); }
 .comm-card.kofi em { color: #ff8a87; }
+
+/* ---------- 언어 선택 드롭다운 ---------- */
+.nav .lang-nav { padding: 0; border: 0; }
+.lang-menu { position: relative; }
+.lang-menu summary {
+  list-style: none; cursor: pointer; user-select: none;
+  display: flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 13px; color: var(--muted); white-space: nowrap;
+}
+.lang-menu summary::-webkit-details-marker { display: none; }
+.lang-menu summary::after { content: "▾"; font-size: 11px; opacity: .7; }
+.lang-menu summary:hover, .lang-menu[open] summary { color: var(--text); border-color: var(--accent-2); }
+.lang-menu .globe { width: 15px; height: 15px; flex: none; }
+.lang-list {
+  position: absolute; right: 0; top: calc(100% + 8px); min-width: 160px; z-index: 20;
+  display: flex; flex-direction: column; padding: 6px;
+  background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px;
+  box-shadow: 0 14px 34px rgba(0,0,0,.45);
+}
+.nav .lang-list a { padding: 8px 12px; border-radius: 8px; color: var(--muted); font-size: 14px; }
+.nav .lang-list a:hover { background: var(--card); color: var(--text); text-decoration: none; }
+.nav .lang-list a[aria-current="true"] { background: transparent; color: var(--accent); }
+@media (max-width: 640px) {
+  .nav .lang-list a { padding: 9px 12px; font-size: 14px; }
+}
