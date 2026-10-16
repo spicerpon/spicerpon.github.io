@@ -140,6 +140,6 @@
     </nav>
   </div>
 </footer>
-<script>document.addEventListener("click",function(e){document.querySelectorAll("details.lang-menu[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});</script>
+<script>document.addEventListener("click",function(e){document.querySelectorAll("details.lang-menu[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")});var a=e.target.closest&&e.target.closest(".lang-list a");if(a)try{localStorage.setItem("kg_lang",a.lang)}catch(x){}});</script>
 </body>
 </html>
