@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>(function(){var s=["ko","ja","ru","es","fr"],l=null;try{l=localStorage.getItem("kg_lang")}catch(e){}if(!l){var a=navigator.languages||[navigator.language||""];for(var i=0;i<a.length;i++){var c=String(a[i]).slice(0,2).toLowerCase();if(c==="en"||s.indexOf(c)>-1){l=c;break}}}if(l&&s.indexOf(l)>-1)location.replace("/"+l+location.pathname+location.search+location.hash)})();</script>
   <title>Privacy Policy — KOGAMES</title>
   <meta name="description" content="Privacy Policy for KOGAMES and its games, including Star Miner, GunGon and Wormball.">
   <link rel="canonical" href="https://kogames.dev/privacy/">
@@ -141,6 +142,6 @@
     </nav>
   </div>
 </footer>
-<script>document.addEventListener("click",function(e){document.querySelectorAll("details.lang-menu[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});</script>
+<script>document.addEventListener("click",function(e){document.querySelectorAll("details.lang-menu[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")});var a=e.target.closest&&e.target.closest(".lang-list a");if(a)try{localStorage.setItem("kg_lang",a.lang)}catch(x){}});</script>
 </body>
 </html>
