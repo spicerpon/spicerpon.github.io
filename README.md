@@ -30,7 +30,7 @@ GitHub Pages로 무료 상시 호스팅되는 정적 웹사이트입니다. 서�
 - 개인정보처리방침: 실제로 쓰지 않는 SDK(Firebase, Unity Ads 등)는 표에서 행 삭제, 시행일 변경
 - 이메일 변경: 모든 파일에서 `spicerpon@gmail.com` 검색 후 교체
 
-## Google OAuth 브랜딩 인증 입력값 (star-miner-464706)
+## Google OAuth 브랜딩 인증 입력값 (Star Miner 프로젝트)
 
 | 항목 | 값 |
 |---|---|
