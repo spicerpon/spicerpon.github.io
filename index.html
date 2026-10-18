@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>(function(){var s=["ko","ja","ru","es","fr"],l=null;try{l=localStorage.getItem("kg_lang")}catch(e){}if(!l){var a=navigator.languages||[navigator.language||""];for(var i=0;i<a.length;i++){var c=String(a[i]).slice(0,2).toLowerCase();if(c==="en"||s.indexOf(c)>-1){l=c;break}}}if(l&&s.indexOf(l)>-1)location.replace("/"+l+location.pathname+location.search+location.hash)})();</script>
   <title>KOGAMES — The kingdom of games</title>
-  <meta name="description" content="KOGAMES is an independent mobile game studio from Korea making idle and casual games such as Star Miner, GunGon and Wormball.">
+  <meta name="description" content="KOGAMES is an independent mobile game studio from Korea making idle and casual mobile games such as Star Miner, GunGon and Wormball, and browser games like Deep Bite.">
   <link rel="canonical" href="https://kogames.dev/">
   <link rel="alternate" hreflang="en" href="https://kogames.dev/">
   <link rel="alternate" hreflang="ko" href="https://kogames.dev/ko/">
@@ -58,13 +58,15 @@
   <section id="games">
     <div class="wrap">
       <h2>Our Games</h2>
-      <p class="sub">Games by KOGAMES, available on Google Play.</p>
-      <div class="games">
+      <p class="sub">Mobile games on Google Play, and browser games you can play right now.</p>
+      <div class="games-group" id="apps">
+        <div class="group-head"><h3>Mobile apps</h3><span class="group-note">Google Play · Android</span></div>
+        <div class="games">
         <article class="game">
           <div class="game-head">
             <span class="icon"><img src="https://play-lh.googleusercontent.com/uCar93J8aMbg3k8gANjBmitbuxbvH6yznfsO1_fwj23ah6XDpNiqq2AhFHD66a-QBFhsYei6vV0tFseI3oCawA=s144" alt="Star Miner: Idle Mining Galaxy" loading="lazy" onerror="this.style.opacity=0"></span>
             <div>
-              <h3>Star Miner: Idle Mining Galaxy</h3>
+              <h4>Star Miner: Idle Mining Galaxy</h4>
               <div class="tag">Idle tycoon · Space</div>
             </div>
           </div>
@@ -76,7 +78,7 @@
           <div class="game-head">
             <span class="icon"><img src="https://play-lh.googleusercontent.com/-QHZgw6DNU22R3gG6sVu4Gv_TOSOx_BN4vgQz9bdn3c63f9N1MVg12nPH2g7q6rqnEbN8HGwP-X6f9tWsOeo_A=s144" alt="GunGon: Idle Knight" loading="lazy" onerror="this.style.opacity=0"></span>
             <div>
-              <h3>GunGon: Idle Knight</h3>
+              <h4>GunGon: Idle Knight</h4>
               <div class="tag">Idle RPG · Pixel art</div>
             </div>
           </div>
@@ -88,13 +90,31 @@
           <div class="game-head">
             <span class="icon"><img src="https://play-lh.googleusercontent.com/CREEKW21gANSxRjWKEzVXlWsXrUXExuSZ9BQ6BnURzMC59XnkQAJtfY1e32Vu3qlbl1WAIIcG1waJzx3LtgI4Q=s144" alt="Wormball: Grow an Asteroid" loading="lazy" onerror="this.style.opacity=0"></span>
             <div>
-              <h3>Wormball: Grow an Asteroid</h3>
+              <h4>Wormball: Grow an Asteroid</h4>
               <div class="tag">Arcade · Idle growth</div>
             </div>
           </div>
           <p>Grow the mightiest asteroid in the universe — one-touch idle growth meets split-second dodging.</p>
           <div class="links"><a href="https://play.google.com/store/apps/details?id=com.KOgames.NumberGrow" target="_blank" rel="noopener">Google Play ↗</a></div>
         </article>
+      </div>
+      </div>
+
+      <div class="games-group" id="web">
+        <div class="group-head"><h3>Web games</h3><span class="group-note">Play in your browser · no install</span></div>
+        <div class="games">
+          <article class="game">
+            <div class="game-head">
+              <span class="icon"><img src="/assets/deep-bite.svg" alt="Deep Bite" width="72" height="72" loading="lazy"></span>
+              <div>
+                <h4>Deep Bite</h4>
+                <div class="tag">Multiplayer .io · Ocean</div>
+              </div>
+            </div>
+            <p>Start as a tiny fish, eat everything smaller than you and grow into the terror of the reef — a free multiplayer .io game, no download needed.</p>
+            <div class="links"><a class="play" href="/deep-bite/">Play now</a><a href="/deep-bite/#about">How to play</a></div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
