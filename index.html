@@ -44,6 +44,8 @@
   <!-- ===== HERO ===== -->
   <div class="hero">
     <div class="wrap">
+      <div class="hero-grid">
+      <div class="hero-text">
       <p class="eyebrow">Independent Mobile Game Studio · Korea</p>
       <h1>The kingdom of games.<br>We create happy memories.</h1>
       <p class="lead">KOGAMES is an independent studio from Korea. We make idle and casual mobile games that are easy to pick up and rewarding to come back to — played by people all over the world.</p>
@@ -51,13 +53,21 @@
         <a class="btn primary" href="#games">See our games</a>
         <a class="btn" href="https://play.google.com/store/apps/dev?id=5987168296288757151" target="_blank" rel="noopener">View on Google Play ↗</a>
       </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="tile t1"><img src="https://play-lh.googleusercontent.com/uCar93J8aMbg3k8gANjBmitbuxbvH6yznfsO1_fwj23ah6XDpNiqq2AhFHD66a-QBFhsYei6vV0tFseI3oCawA=s144" alt="" loading="lazy"></div>
+        <div class="tile t2"><img src="https://play-lh.googleusercontent.com/-QHZgw6DNU22R3gG6sVu4Gv_TOSOx_BN4vgQz9bdn3c63f9N1MVg12nPH2g7q6rqnEbN8HGwP-X6f9tWsOeo_A=s144" alt="" loading="lazy"></div>
+        <div class="tile t3"><img src="https://play-lh.googleusercontent.com/CREEKW21gANSxRjWKEzVXlWsXrUXExuSZ9BQ6BnURzMC59XnkQAJtfY1e32Vu3qlbl1WAIIcG1waJzx3LtgI4Q=s144" alt="" loading="lazy"></div>
+        <div class="tile t4"><img src="/assets/deep-bite.svg" alt="" loading="lazy"></div>
+      </div>
+      </div>
     </div>
   </div>
 
   <!-- ===== GAMES : copy one <article class="game"> block to add a game ===== -->
   <section id="games">
     <div class="wrap">
-      <h2>Our Games</h2>
+      <h2><span class="num">01</span>Our Games</h2>
       <p class="sub">Mobile games on Google Play, and browser games you can play right now.</p>
       <div class="games-group" id="apps">
         <div class="group-head"><h3>Mobile apps</h3><span class="group-note">Google Play · Android</span></div>
@@ -102,17 +112,20 @@
 
       <div class="games-group" id="web">
         <div class="group-head"><h3>Web games</h3><span class="group-note">Play in your browser · no install</span></div>
-        <div class="games">
-          <article class="game">
+        <div class="games wide">
+          <article class="game wide">
+            <div class="art"><img src="/deep-bite/assets/og.jpg" alt="Deep Bite" width="1200" height="630" loading="lazy"></div>
+            <div class="body">
             <div class="game-head">
               <span class="icon"><img src="/assets/deep-bite.svg" alt="Deep Bite" width="72" height="72" loading="lazy"></span>
               <div>
-                <h4>Deep Bite</h4>
+                <h4>Deep Bite <span class="pill">New</span></h4>
                 <div class="tag">Multiplayer .io · Ocean</div>
               </div>
             </div>
             <p>Start as a tiny fish, eat everything smaller than you and grow into the terror of the reef — a free multiplayer .io game, no download needed.</p>
             <div class="links"><a class="play" href="/deep-bite/">Play now</a><a href="/deep-bite/#about">How to play</a></div>
+            </div>
           </article>
         </div>
       </div>
@@ -120,14 +133,14 @@
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section id="about">
+  <section id="about" class="band">
     <div class="wrap">
-      <h2>About KOGAMES</h2>
+      <h2><span class="num">02</span>About KOGAMES</h2>
       <p class="sub">Small studio, games that last.</p>
       <div class="grid-2">
-        <div class="box"><h3>Easy to start, hard to put down</h3><p>We focus on idle games you can play with one hand and keep growing in for months.</p></div>
-        <div class="box"><h3>Built with our players</h3><p>We read every review and support email ourselves, and it shapes every update.</p></div>
-        <div class="box"><h3>Respect for your data</h3><p>We only handle what our games need to run. See our <a href="/privacy/">Privacy Policy</a> for details.</p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18.4 5.6l-2.1 2.1M21 12h-3"/><path d="M8 21h8l1-6a5 5 0 0 0-10 0l1 6Z"/></svg></span><h3>Easy to start, hard to put down</h3><p>We focus on idle games you can play with one hand and keep growing in for months.</p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></span><h3>Built with our players</h3><p>We read every review and support email ourselves, and it shapes every update.</p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 5 3.4 8.4 8 9 4.6-.6 8-4 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></span><h3>Respect for your data</h3><p>We only handle what our games need to run. See our <a href="/privacy/">Privacy Policy</a> for details.</p></div>
       </div>
     </div>
   </section>
@@ -135,12 +148,12 @@
   <!-- ===== CONTACT ===== -->
   <section id="contact">
     <div class="wrap">
-      <h2>Contact &amp; Support</h2>
+      <h2><span class="num">03</span>Contact &amp; Support</h2>
       <p class="sub">Questions, bug reports, or account and data deletion requests — just email us. We reply in English, Korean and Japanese.</p>
       <div class="grid-2">
-        <div class="box"><h3>Support email</h3><p><a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a></p></div>
-        <div class="box"><h3>Policies</h3><p><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a></p></div>
-        <div class="box"><h3>Support us</h3><p>Enjoying our games? You can buy the team a coffee on Ko-fi.<br><a href="https://ko-fi.com/kogames26" target="_blank" rel="noopener">Support on Ko-fi ↗</a></p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><h3>Support email</h3><p><a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a></p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5Z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><h3>Policies</h3><p><a href="/privacy/">Privacy</a><br><a href="/terms/">Terms</a></p></div>
+        <div class="box"><span class="box-ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h12v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5V8Z"/><path d="M16 9h2a3 3 0 0 1 0 6h-2M6 3v2M10 3v2M14 3v2"/></svg></span><h3>Support us</h3><p>Enjoying our games? You can buy the team a coffee on Ko-fi.<br><a href="https://ko-fi.com/kogames26" target="_blank" rel="noopener">Support on Ko-fi ↗</a></p></div>
       </div>
     </div>
   </section>
@@ -155,6 +168,7 @@
     </div>
     <nav>
       <a href="/star-miner/">Star Miner</a>
+      <a href="/deep-bite/">Deep Bite</a>
       <a href="/privacy/">Privacy</a>
       <a href="/terms/">Terms</a>
       <a href="mailto:spicerpon@gmail.com">spicerpon@gmail.com</a>
