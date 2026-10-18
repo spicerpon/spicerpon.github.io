@@ -292,3 +292,14 @@ section.band { background: linear-gradient(180deg, rgba(18,21,42,0), var(--bg-2)
 .game.wide .links a:not(.play):hover { border-color: var(--accent-2); text-decoration: none; }
 .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; background: rgba(79,216,255,.14); color: #8fe6ff; border: 1px solid rgba(79,216,255,.35); margin-left: 8px; vertical-align: 2px; }
 @media (max-width: 720px) { .game.wide { flex-direction: column; align-items: stretch; } .game.wide .art { width: 100%; max-width: none; } }
+
+/* ---------- 모바일 히어로 압축: 아이콘 클러스터를 먼저·작게, 버튼은 한 줄 ---------- */
+@media (max-width: 860px) {
+  .hero { padding: 36px 0 36px; }
+  .hero-grid { gap: 22px; }
+  .hero-art { order: -1; width: min(100%, 176px); margin: 0 auto 2px; }
+}
+@media (max-width: 400px) {
+  .hero .btn { padding: 12px 18px; font-size: 14px; }
+  .hero .btn-row { gap: 10px; }
+}
