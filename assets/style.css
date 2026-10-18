@@ -108,6 +108,14 @@ section .sub { color: var(--muted); margin: 0 0 32px; }
 .game .tag { color: var(--muted); font-size: 13px; }
 .game p { margin: 0; color: var(--muted); font-size: 15px; flex: 1; }
 .game .links { display: flex; gap: 14px; font-size: 14px; font-weight: 600; }
+.game .links a.play { color: var(--accent); }
+
+/* ---------- 게임 그룹 (Mobile apps / Web games) ---------- */
+.games-group + .games-group { margin-top: 40px; }
+.group-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 16px; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+.group-head h3 { margin: 0; font-size: 20px; }
+.group-note { color: var(--muted); font-size: 13px; }
+.game h4 { margin: 0; font-size: 18px; line-height: 1.35; }
 
 /* ---------- 정보 박스 ---------- */
 .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
