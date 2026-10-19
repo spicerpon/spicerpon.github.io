@@ -306,3 +306,17 @@ section.band { background: linear-gradient(180deg, rgba(18,21,42,0), var(--bg-2)
 @media (max-width: 640px) {
   .hero .btn-row .btn { flex: 1 1 auto; justify-content: center; }
 }
+
+/* ---- Candy Merge composed icon (uses the game's own candy art) ---- */
+.cm { background: linear-gradient(135deg, #a95cff 0%, #6b2fe0 52%, #2d1270 100%) !important; position: relative; }
+.cm::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(circle at 30% 22%, rgba(255,255,255,.22), transparent 44%), radial-gradient(circle at 68% 76%, rgba(255,122,217,.5), transparent 46%),
+  linear-gradient(135deg, rgba(255,255,255,.10) 0 18%, transparent 18% 60%, rgba(255,255,255,.08) 60% 74%, transparent 74%); }
+.cm img.cm-wm, .cm img.cm-le, .cm img.cm-ch { position: absolute; height: auto; object-fit: contain; z-index: 1; }
+.cm img.cm-wm { left: 15%; top: 24%; width: 70%; transform: rotate(-8deg); filter: drop-shadow(0 10px 14px rgba(26,9,64,.55)); }
+.cm img.cm-le { left: -11%; top: -9%; width: 38%; transform: rotate(-14deg); filter: drop-shadow(0 4px 6px rgba(26,9,64,.4)); }
+.cm img.cm-ch { left: 72%; top: 8%; width: 28%; transform: rotate(12deg); filter: drop-shadow(0 4px 6px rgba(26,9,64,.4)); }
+.cm .cm-sp { position: absolute; z-index: 2; width: 12%; aspect-ratio: 1; background: #fff;
+  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); opacity: .95; }
+.cm .cm-sp.s1 { left: 76%; top: 42%; } .cm .cm-sp.s2 { left: 17%; top: 66%; width: 8%; opacity: .85; }
+.icon.cm img { position: absolute; inset: 8%; width: 84%; height: 84%; object-fit: contain; filter: drop-shadow(0 3px 5px rgba(26,9,64,.5)); }
