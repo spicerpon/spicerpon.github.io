@@ -307,16 +307,23 @@ section.band { background: linear-gradient(180deg, rgba(18,21,42,0), var(--bg-2)
   .hero .btn-row .btn { flex: 1 1 auto; justify-content: center; }
 }
 
-/* ---- Candy Merge composed icon (uses the game's own candy art) ---- */
-.cm { background: linear-gradient(135deg, #a95cff 0%, #6b2fe0 52%, #2d1270 100%) !important; position: relative; }
-.cm::after { content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(circle at 30% 22%, rgba(255,255,255,.22), transparent 44%), radial-gradient(circle at 68% 76%, rgba(255,122,217,.5), transparent 46%),
-  linear-gradient(135deg, rgba(255,255,255,.10) 0 18%, transparent 18% 60%, rgba(255,255,255,.08) 60% 74%, transparent 74%); }
-.cm img.cm-wm, .cm img.cm-le, .cm img.cm-ch { position: absolute; height: auto; object-fit: contain; z-index: 1; }
-.cm img.cm-wm { left: 15%; top: 24%; width: 70%; transform: rotate(-8deg); filter: drop-shadow(0 10px 14px rgba(26,9,64,.55)); }
-.cm img.cm-le { left: -11%; top: -9%; width: 38%; transform: rotate(-14deg); filter: drop-shadow(0 4px 6px rgba(26,9,64,.4)); }
-.cm img.cm-ch { left: 72%; top: 8%; width: 28%; transform: rotate(12deg); filter: drop-shadow(0 4px 6px rgba(26,9,64,.4)); }
-.cm .cm-sp { position: absolute; z-index: 2; width: 12%; aspect-ratio: 1; background: #fff;
-  clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%); opacity: .95; }
-.cm .cm-sp.s1 { left: 76%; top: 42%; } .cm .cm-sp.s2 { left: 17%; top: 66%; width: 8%; opacity: .85; }
-.icon.cm img { position: absolute; inset: 8%; width: 84%; height: 84%; object-fit: contain; filter: drop-shadow(0 3px 5px rgba(26,9,64,.5)); }
+/* ---- Candy Merge composed icon: a glass jar full of candies (uses the game's own candy art) ---- */
+.cm { position: relative; background:
+  radial-gradient(circle at 50% 115%, rgba(255,214,245,.9) 0, rgba(255,214,245,0) 45%),
+  radial-gradient(circle at 18% 12%, rgba(255,255,255,.6), rgba(255,255,255,0) 38%),
+  linear-gradient(160deg, #ffe29a 0%, #ff9ad1 50%, #8f54ff 100%) !important; }
+.cm .jar { position: absolute; left: 12%; right: 12%; top: 25%; bottom: -9%; border-radius: 9% 9% 24% 24% / 7% 7% 17% 17%;
+  background: linear-gradient(180deg, rgba(255,255,255,.40), rgba(220,235,255,.16));
+  box-shadow: inset 0 0 0 3.5% rgba(255,255,255,.92), inset 0 -3% 8% rgba(120,40,160,.14), 0 8% 16% rgba(90,20,120,.28); }
+.cm .jar::before { content: ''; position: absolute; left: 7%; top: 9%; width: 6%; height: 50%; border-radius: 999px; background: linear-gradient(rgba(255,255,255,.95), rgba(255,255,255,0)); }
+.tile.cm img, .icon.cm img { position: absolute; width: 20%; height: auto; object-fit: contain; filter: drop-shadow(0 2px 3px rgba(80,20,110,.35)); }
+.cm img.c1 { left: 16%; top: 35%; width: 54%; transform: rotate(-8deg); z-index: 3; filter: drop-shadow(0 6px 10px rgba(80,20,110,.45)); }
+.cm img.c2 { left: 58%; top: 51%; width: 35%; transform: rotate(10deg); z-index: 2; }
+.cm img.c3 { left: 7%; top: 67%; width: 32%; transform: rotate(-14deg); z-index: 4; }
+.cm img.c4 { left: 63%; top: 30%; width: 23%; transform: rotate(18deg); z-index: 1; }
+.cm img.c5 { left: 40%; top: 74%; width: 27%; transform: rotate(6deg); z-index: 5; }
+.cm img.c6 { left: 71%; top: 81%; width: 20%; transform: rotate(-10deg); z-index: 6; }
+.cm img.c7 { left: 36%; top: 8%; width: 16%; transform: rotate(-20deg); z-index: 1; }
+.cm .sp { position: absolute; z-index: 9; width: 11%; aspect-ratio: 1; background: #fff; filter: drop-shadow(0 0 4px rgba(255,255,255,.9));
+  clip-path: polygon(50% 0, 60% 40%, 100% 50%, 60% 60%, 50% 100%, 40% 60%, 0 50%, 40% 40%); }
+.cm .sp.s1 { left: 76%; top: 12%; } .cm .sp.s2 { left: 12%; top: 50%; width: 7%; } .cm .sp.s3 { left: 89%; top: 46%; width: 6%; }
