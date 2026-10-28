@@ -26,6 +26,8 @@
 .doc .facts div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
 .doc .facts b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:2px}
 .doc .facts span{color:var(--text);font-weight:600}
+.doc .facts div:last-child{grid-column:span 2}
+.doc .facts span a{font-size:15px}
 .doc .cat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:14px 0 6px}
 .doc .cat a.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;color:var(--text)}
 .doc .cat a.card:hover{border-color:var(--accent-2);text-decoration:none}
